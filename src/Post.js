@@ -1,4 +1,8 @@
 import React, { PureComponent } from 'react'
+import {
+  createFragmentContainer,
+  graphql
+} from 'react-relay'
 
 class Post extends PureComponent {
 
@@ -22,7 +26,14 @@ class Post extends PureComponent {
   }
 
   _handleDelete = () => {
+
   }
 }
 
-export default Post
+export default createFragmentContainer(Post, graphql`
+fragment Post_post on Post {
+  id
+  description
+  imageUrl
+}
+`)
