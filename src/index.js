@@ -7,8 +7,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path='/' component={App} />
-      <Route path='/create' component={CreatePage} />
+      <Route exact path='/' component={App} />
+      <Route exact path='/create' component={CreatePage} />
     </Switch>
   </BrowserRouter>
   , document.getElementById('root')
