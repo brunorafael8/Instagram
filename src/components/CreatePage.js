@@ -1,6 +1,5 @@
-
-import React from 'react'
-class CreatePage extends React.Component {
+import React, { PureComponent } from 'react'
+class CreatePage extends PureComponent {
 state = {
     description: '',
     imageUrl: '',

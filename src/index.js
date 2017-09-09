@@ -1,8 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import CreatePage from './components/CreatePage'
+import registerServiceWorker from './registerServiceWorker'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+ReactDOM.render(
+  <BrowserRouter>
+    <Switch>
+      <Route path='/' component={App} />
+      <Route path='/create' component={CreatePage} />
+    </Switch>
+  </BrowserRouter>
+  , document.getElementById('root')
+)
+registerServiceWorker()

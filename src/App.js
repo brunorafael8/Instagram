@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import ListPage from './ListPage'
+import ListPage from './components/ListPage'
 import {
   QueryRenderer,
   graphql
