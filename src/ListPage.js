@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {PureComponent} from 'react'
 import Post from './Post'
-​
+
 const mockPostData = [
   {
     node: {
@@ -17,9 +17,9 @@ const mockPostData = [
     }
   }
 ]
-​
-class ListPage extends React.Component {
-​
+
+class ListPage extends PureComponent {
+
   render () {
     return (
       <div className='w-100 flex justify-center'>
@@ -31,7 +31,7 @@ class ListPage extends React.Component {
       </div>
     )
   }
-​
+
 }
-​
+
 export default ListPage

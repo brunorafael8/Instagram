@@ -1,7 +1,7 @@
-import React from 'react'
-​
-class Post extends React.Component {
-​
+import React, { PureComponent } from 'react'
+
+class Post extends PureComponent {
+
   render () {
     return (
       <div className='pa3 bg-black-05 ma3'>
@@ -20,9 +20,9 @@ class Post extends React.Component {
       </div>
     )
   }
-​
+
   _handleDelete = () => {
   }
 }
-​
+
 export default Post
