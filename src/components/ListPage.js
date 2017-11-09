@@ -14,7 +14,7 @@ class ListPage extends PureComponent {
         <Link to='/create' className='fixed bg-white top-0 right-0 pa4 ttu dim black no-underline'>
         + New Post
       </Link>
-        <div className='w-100' style={{ maxWidth: 400 }}>
+        <div className='w-100' style={{ maxheight: 200, maxWidth: 600 }}>
           {this.props.viewer.allPosts.edges.map(({node}) =>
           <Post key={node.id} post={node} viewer={this.props.viewer} />
           )}

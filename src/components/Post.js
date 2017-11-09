@@ -13,8 +13,8 @@ class Post extends PureComponent {
           className='w-100'
           style={{
             backgroundImage: `url(${this.props.post.imageUrl})`,
-            backgroundSize: 'cover',
-            paddingBottom: '100%',
+            backgroundRepeat: 'no-repeat',
+            paddingBottom: 230,
           }}
         />
         <div className='pt3'>
